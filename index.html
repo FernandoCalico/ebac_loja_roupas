@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC-Moda Masculina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-2 section-title fs-1 fw-bold fst-italic">EBAC - Moda Masculina</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex justify-content-md-end p-0">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link active">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#promocoes" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Promoções
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nossos produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja" class="mt-0 mb-0 p-0">
+            <div id="album-container" class="container p-0">
+                <div id="album" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/slides/slide1.jpg" alt="Fachada da loja">
+                            <div class="carousel-caption">
+                                Fachada da Loja
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/slides/slide2.jpg" alt="Interior da loja">
+                            <div class="carousel-caption">
+                                Interior da Loja
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/slides/slide3.jpg" alt="Roupas para o lazer">
+                            <div class="carousel-caption">
+                                Roupas para o lazer
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/slides/slide4.jpg" alt="Roupas para o trabalho">
+                            <div class="carousel-caption">
+                                Para o trabalho
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="./images/slides/slide5.jpg" alt="Roupas para momentos especiais">
+                            <div class="carousel-caption">
+                                Para ocasiões especiais
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#album" data-bs-slide="prev">
+                        <i class="bi bi-caret-left-square-fill me-1 fs-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Voltar"></i>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#album" data-bs-slide="next">
+                        <i class="bi bi-caret-right-square-fill me-1 fs-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Avançar"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#album" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#album" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#album" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#album" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#album" data-bs-slide-to="4"></button>
+                    </div>                       
+                </div>
+        </section>
+        <section id="promocoes" class="mt-0 mb-0 pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="section-title">
+                        <i class="bi bi-calendar-check me-1"></i>
+                        Promoções
+                    </h2>
+                </div>
+                <div class="row justify-content-lg-between g-lg-4">
+                    <div class="col-promocao col-lg-3 col-md-6 col-sm-12">
+                        <img class="d-block w-100 img-thumbnail rounded-3" src="./images/promocoes/promocao1.jpg" alt="Promoção 4 camisas sociais">
+                        <h4 class="section-title pt-2 fw-bold">4 camisas sociais por apenas R$ 150,00</h4>
+                        <P class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae, odit repellendus explicabo corporis provident animi? Quisquam similique vero beatae deleniti aut voluptatum
+                        </P>
+                    </div>
+                    <div class="col-promocao col-lg-3 col-md-6 col-sm-12">
+                        <img class="d-block w-100 img-thumbnail rounded-3" src="./images/promocoes/promocao2.jpg" alt="Promoção sapa-tênis">
+                        <h4 class="section-title pt-2 fw-bold">Sapatênis por R$ 80,00</h4>
+                        <P class="fs-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae odit maxime, quos consectetur mollitia repellat
+                        </P>
+                    </div>
+                    <div class="col-promocao col-lg-3 col-md-6 col-sm-12">
+                        <img class="d-block w-100 img-thumbnail rounded-3" src="./images/promocoes/promocao3.jpg" alt="Promoção terno + camisa social + gravata">
+                        <h4 class="section-title pt-2 fw-bold">Terno + camisa social + gravata por apenas R$ 600,00</h4>
+                        <P class="fs-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae odit maxime, quos consectetur mollitia repellat
+                        </P>
+                    </div>
+                    <div class="col-promocao col-lg-3 col-md-6 col-sm-12">
+                        <img class="d-block w-100 img-thumbnail rounded-3" src="./images/promocoes/promocao5.jpg" alt="Promoção 3 calças jeans">
+                        <h4 class="section-title pt-2 fw-bold">3 calças jeans por R$ 130,00</h4>
+                        <P class="fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident a at id recusandae aut porro error tenetur optio doloribus
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="mt-0 mb-0 pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="section-title">
+                        <i class="bi bi-card-text me-1"></i>
+                        Nossos produtos
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="menu-produtos col-lg-2 col-md-2 col-sm-12 bg-black pt-5 rounded-3">
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#moda-casual" class="nav-link fw-bold text-start active">Moda casual</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#moda-social" class="nav-link fw-bold text-start">Moda social</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#moda-rigor" class="nav-link fw-bold text-start">Moda rigor</button>
+                        </nav>        
+                    </aside>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                        <div class="tab-content">
+                            <div id="moda-casual" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual1.jpg" alt="Homem vestindo moda casual">
+                                        <h5 class="fw-bold mt-2">Traje casual</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual2.jpg" alt="Homem vestindo moda casual">
+                                        <h5 class="fw-bold mt-2">Traje casual</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual3.jpg" alt="Homem vestindo moda casual">
+                                        <h5 class="fw-bold mt-2">Traje casual</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual4.jpg" alt="Homem vestindo moda casual">
+                                        <h5 class="fw-bold mt-2">Traje casual</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-camisas1.jpg" alt="Pratelheiras com camisas casuais">
+                                        <h5 class="fw-bold mt-2">Camisas</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-camisas2.jpg" alt="Pratelheiras com camisas casuais">
+                                        <h5 class="fw-bold mt-2">Camisas</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-calcas1.jpg" alt="Calças jeans dobradas e empilhadas">
+                                        <h5 class="fw-bold mt-2">Calças</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-sapatos1.jpg" alt="Sapatos de camurça várias cores">
+                                        <h5 class="fw-bold mt-2">Sapatos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-sapatos2.jpg" alt="Sapatos de courino várias cores">
+                                        <h5 class="fw-bold mt-2">Sapatos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-sapatos3.jpg" alt="Par de sapatênis">
+                                        <h5 class="fw-bold mt-2">Sapatênis</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-sapatos4.jpg" alt="Par de sapatênis">
+                                        <h5 class="fw-bold mt-2">Sapatênis</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-casual col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-casual/casual-sapatos5.jpg" alt="Sapato em couro mole">
+                                        <h5 class="fw-bold mt-2">Sapato</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="moda-social" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social1.jpg" alt="Homem vestindo moda social">
+                                        <h5 class="fw-bold mt-2">Traje social</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social2.jpg" alt="Dois manequins vestindo trajes casuais">
+                                        <h5 class="fw-bold mt-2">Traje social</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-camisas1.jpg" alt="Camisas sociais vários modelos">
+                                        <h5 class="fw-bold mt-2">Camisas sociais</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-camisas2.jpg" alt="Camisa social dobrado com gravata">
+                                        <h5 class="fw-bold mt-2">Camisas sociais</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-camisas3.jpg" alt="Camisa social listra de giz">
+                                        <h5 class="fw-bold mt-2">Camisas sociais</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-camisas4.jpg" alt="Camisa social listrada de várias cores">
+                                        <h5 class="fw-bold mt-2">Camisas sociais</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-ternos1.jpg" alt="Ternos na arara de várias cores e modelos">
+                                        <h5 class="fw-bold mt-2">Ternos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-ternos2.jpg" alt="Manequim vestindo terno azul e gravata vermelha">
+                                        <h5 class="fw-bold mt-2">Ternos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-ternos3.jpg" alt="Manequim vestindo terno cinza e gravata marrom">
+                                        <h5 class="fw-bold mt-2">Ternos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-sapatos1.jpg" alt="Sapato social em couro">
+                                        <h5 class="fw-bold mt-2">Sapatos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-sapatos2.jpg" alt="Vários modelos de sapatos sociais em couro">
+                                        <h5 class="fw-bold mt-2">Sapatos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-social col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-social/social-sapatos3.jpg" alt="Par de sapato em couro com fivelas">
+                                        <h5 class="fw-bold mt-2">Sapatos</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="moda-rigor" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-rigor col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-rigor/moda-rigor1.jpg" alt="Manequim vestindo traje rigor">
+                                        <h5 class="fw-bold mt-2">Traje rigor</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-rigor col-lg-3 col-md-6 col-sm-12">
+                                        <img class="d-block w-100 img-thumbnail rounded-3" src="/images/produtos/moda-rigor/moda-rigor2.jpg" alt="Dois manequins vestindo trajes a rigor">
+                                        <h5 class="fw-bold mt-2">Traje rigor</h5>
+                                        <p class="fs-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="mt-0 mb-0 pt-3">
+            <div class="container">
+                <div id="fale-conosco" class="row">
+                    <h2 class="section-title">
+                        <i class="bi bi-chat-left-text me-1"></i>
+                        Fale conosco
+                    </h2>
+                </div>
+                <div class="row">
+                    <div id="col-fale-conosco" class="col-lg-6 col-md-6 col-sm-12">
+                        <form class="needs-validation" autocomplete="off" novalidate>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nomeCompleto" name="nomeCompleto" placeholder=" " required autocomplete="off"/>
+                                <label class="form-label w-50" for="nomeCompleto">Nome Completo</label>
+                                <div class="invalid-feedback ms-1">
+                                    Informe seu nome completo
+                                </div>
+                            </div>
+                            <div class="form-campo form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" required autocomplete="off"/>
+                                <label class="form-label w-50" for="email">Seu E-Mail</label>
+                                <div class="invalid-feedback ms-1">
+                                    E-Mafil inválido
+                                </div>
+                            </div>    
+                            <div class="form-campo form-floating mb-3">
+                                <input type="tel" class="form-control w-50" id="telefone" name="telefone" placeholder=" " required minlength="14" autocomplete="off"/>
+                                <label class="form-label w-50" for="telefone">Telefone Celular</label>
+                                <div class="invalid-feedback ms-1">
+                                    Telefone inválido
+                                </div>
+                            </div>
+                            <div class="form-campo form-floating mb-3">
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="3" style="height:auto;" placeholder=" " maxlength="100" autocomplete="off"></textarea>
+                                <label class="form-label w-50" for="mensagem">Mensagem</label>
+                            </div>
+                            <button class="btn btn-success" type="submit">Enviar</button>
+                        </form>                        
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-12 ms-lg-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5 text-color me-4">
+                                    <a href="#" title="Siga-nos no facebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 me-4">
+                                    <a href="#" title="Siga-nos no instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ">
+                                    <a href="#" title="Siga-nos no whatsapp">
+                                        <i class="bi bi-whatsapp "></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - Niterói - RJ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>        
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

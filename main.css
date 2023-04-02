@@ -1,0 +1,97 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar{
+    background-color: #f5b334;
+    color: #bbb9b8;
+}
+
+#cabecalho .nav .nav-link.active,
+.nav-produtos .nav-link.active{
+    background-color: #fff;
+    color:  #bbb9b8;
+}
+
+#cabecalho .nav .nav-link,
+.nav-produtos .nav-link{
+    color:#ffffff;
+}
+
+#cabecalho .nav .nav-link.active:hover{
+    color: #bbb9b8;
+}
+
+.navbar-toggler{
+    background-color: #ffeae6;
+}
+
+.section{
+    height: 200px;
+}
+
+.section-title{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.carousel-inner img{
+    height: 650px; 
+}
+
+#sobre-a-loja{
+    background-color: #000000;
+}
+
+#promocoes,
+#contato{
+    background-image: url(./images/promocoes/fundo.jpg);
+}
+
+#produtos{
+    background-image: url(./images/produtos/fundo1.jpg);
+}
+
+.form-floating:not(.form-control:disabled)::before {
+    content: none;
+}
+
+.form-floating > .form-control::placeholder{
+    color: revert;
+}
+
+.form-floating > .form-control:not(:focus)::placeholder{
+    color: transparent;
+}
+
+#mensagem {
+    height: 100px;
+    max-height: 100px;
+    resize: none;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #000000;
+}
+
+@media only screen and (max-width: 992px) {
+    #col-fale-conosco{
+        margin-bottom: 50px;
+    }
+
+    .menu-produtos,
+    .col-promocao,
+    .col-casual,
+    .col-social,
+    .col-rigor{
+        margin-bottom: 20px;
+    };
+
+}
